@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>退貨優化 V2 - 新增自動派車功能</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          animation: {
+            fadeIn: 'fadeIn 0.3s ease-in-out',
+            slideUp: 'slideUp 0.3s ease-out',
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0' },
+              '100%': { opacity: '1' },
+            },
+            slideUp: {
+              '0%': { opacity: '0', transform: 'translateY(20px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            },
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { margin: 0; height: 100%; }
+    body { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+    #root { height: 100%; }
+    @media (max-width: 640px) {
+      table { font-size: 11px; }
+    }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  <script>window.__RETURN_APP_VARIANT__ = 'v2';</script>
+  <script src="./app.js"></script>
+</body>
+</html>

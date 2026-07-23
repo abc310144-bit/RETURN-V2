@@ -12,9 +12,24 @@ UrMart 後台退貨流程原型（Demo）V2 版本，在 V1 基礎上新增**自
 
 ## 快速開始
 
+### 線上 Demo（GitHub Pages）
+
+啟用 Pages 後，Demo 網址為：
+
+**https://abc310144-bit.github.io/RETURN-V2/**
+
+### 本機開啟
+
 1. 下載或 clone 本專案
-2. 雙擊開啟 `退貨 V2 index.html`（需與同目錄的 `app.js` 放在一起）
+2. 雙擊開啟 `index.html` 或 `退貨 V2 index.html`（需與同目錄的 `app.js` 放在一起）
 3. 首次載入需網路連線（Tailwind CDN）
+
+## 啟用 GitHub Pages
+
+1. 開啟 Repo → **Settings** → 左側 **Pages**
+2. **Build and deployment** → Source 選 **Deploy from a branch**
+3. Branch 選 **main**、資料夾選 **/ (root)** → **Save**
+4. 等待 1～3 分鐘，頁面上方會出現 Demo 網址
 
 ## 原始碼與打包
 
@@ -32,7 +47,8 @@ npm run build:standalone
 ## 專案結構
 
 ```
-├── 退貨 V2 index.html    # V2 入口
+├── index.html            # Pages 入口（與下方相同）
+├── 退貨 V2 index.html    # 本機入口
 ├── app.js                # 打包後的獨立執行檔
 └── README.md
 ```
